@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Yellow View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="yellow1" id="BYZ-38-t0r" customClass="YellowViewController" customModule="Gesture" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.99802259100000001" blue="0.13094417880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Y6S-Yl-fK9" appends="YES" id="eSz-4V-BHA"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Y6S-Yl-fK9">
+                    <connections>
+                        <action selector="showGreenFunc:" destination="BYZ-38-t0r" id="xD0-HM-M5X"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="33.75" y="116.19718309859155"/>
+        </scene>
+        <!--Green View Controller-->
+        <scene sceneID="9cr-L4-7cF">
+            <objects>
+                <viewController storyboardIdentifier="green1" id="x98-aV-gF5" customClass="GreenViewController" customModule="Gesture" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dJ5-v1-cy7"/>
+                        <viewControllerLayoutGuide type="bottom" id="4E0-Hc-qXa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="py0-jV-ER4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="fTc-i3-xRg" appends="YES" id="LGM-QR-l2g"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fh7-fZ-DmB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="fTc-i3-xRg">
+                    <connections>
+                        <action selector="transitionToRed:" destination="x98-aV-gF5" id="eKR-kd-dq3"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="857" y="119"/>
+        </scene>
+        <!--Red View Controller-->
+        <scene sceneID="2SY-7U-ADy">
+            <objects>
+                <viewController storyboardIdentifier="red1" id="30y-GY-dvK" customClass="RedViewController" customModule="Gesture" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="38n-MG-CMf"/>
+                        <viewControllerLayoutGuide type="bottom" id="SDF-Je-49l"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eca-ch-G0Z">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="X4I-zd-lL5" appends="YES" id="g01-Yu-BCH"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6uv-T6-TEJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="X4I-zd-lL5">
+                    <connections>
+                        <action selector="transitionBlue:" destination="30y-GY-dvK" id="sPX-Cm-mTz"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1614" y="118"/>
+        </scene>
+        <!--Blue View Controller-->
+        <scene sceneID="fSh-gi-OpI">
+            <objects>
+                <viewController storyboardIdentifier="blue1" id="xJl-ii-jqz" customClass="BlueViewController" customModule="Gesture" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zuu-3j-a96"/>
+                        <viewControllerLayoutGuide type="bottom" id="PQq-Cs-nPj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WlA-PR-CXf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="mSN-dp-YJm" appends="YES" id="Dyd-pY-xvv"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cq7-DW-ge2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="mSN-dp-YJm">
+                    <connections>
+                        <action selector="backYellow:" destination="xJl-ii-jqz" id="LDJ-hY-KGp"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="backToYellow" modalTransitionStyle="crossDissolve" id="5SL-qG-W0O"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2350" y="124"/>
+        </scene>
+        <!--White View Controller-->
+        <scene sceneID="7Zf-yg-YGq">
+            <objects>
+                <viewController storyboardIdentifier="white" id="fVI-qf-KZR" customClass="WhiteViewController" customModule="Gesture" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gk1-Xg-1jm"/>
+                        <viewControllerLayoutGuide type="bottom" id="iLv-jz-QDW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dG3-rn-DUI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HLM-s5-U9Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3071" y="150"/>
+        </scene>
+    </scenes>
+</document>
